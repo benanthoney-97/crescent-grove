@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Puresport",
+  title: "Chestertons",
 };
 
 export default function RootLayout({ children }) {
