@@ -3,12 +3,12 @@ import React, { useState, useEffect } from "react";
 import Script from "next/script";
 
 export default function VoicePage() {
-  const agentId = process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID || "agent_6501k3rkhzm7fatajhy574g0q7qg";
-  const heroLogo = process.env.NEXT_PUBLIC_BRAND_LOGO_URL || "https://ielaigfiyikzxqecyplz.supabase.co/storage/v1/object/public/business_logos/puresport.png";
+  const agentId = process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID || "agent_8701k3tk9jcxfjathvamxkm9mt0j";
+  const heroLogo = process.env.NEXT_PUBLIC_BRAND_LOGO_URL || "https://ielaigfiyikzxqecyplz.supabase.co/storage/v1/object/public/business_logos/chesterton-logo.png";
   const headerLogo = process.env.NEXT_PUBLIC_HEADER_LOGO_URL || "https://ielaigfiyikzxqecyplz.supabase.co/storage/v1/object/public/UI_elements/Frame_5-removebg-preview.png";
-  const businessName = process.env.NEXT_PUBLIC_BRAND_NAME || "Puresport";
+  const businessName = process.env.NEXT_PUBLIC_BRAND_NAME || "Martyn's Assistant";
   const businessTagline =
-    process.env.NEXT_PUBLIC_BRAND_TAGLINE || "Leading Performance Supplement and Hydration Brand";
+    process.env.NEXT_PUBLIC_BRAND_TAGLINE || "Instant access to all your property info for South West London";
 
   const links = [
     { label: "Get a quote", href: "#" },
@@ -162,7 +162,7 @@ export default function VoicePage() {
              starts near top (larger gap to reduce height) and reaches bottom */
         .container {
           width: 100%;
-          background: black !important;  /* ensure not overridden */
+          background: #6B207D !important;  /* ensure not overridden */
           color: var(--text-blue);
           display: flex;
           flex-direction: column;
@@ -280,7 +280,7 @@ export default function VoicePage() {
           font-weight: 800;
           
           margin: 16px 0 6px 0;
-          color: #e5e7eb;
+          color: white;
         }
         .brandTagline {
           width: 100%;
@@ -288,7 +288,7 @@ export default function VoicePage() {
           text-align: center;
           font-size: clamp(1rem, 3.8vw, 1.1rem);
           font-weight: 800;
-          color: #e5e7eb;
+          color: white;
           margin: 0 0 clamp(16px, 4vw, 22px) 0;
         }
 
@@ -347,7 +347,7 @@ export default function VoicePage() {
         /* DESKTOP: white around a centered blue container, reduced height */
         @media (min-width: 900px) {
           .page {
-            background: #e5e7eb; /* white page background */
+            background: white; /* white page background */
           }
           .container {
             width: min(92vw, 820px);
@@ -358,7 +358,7 @@ export default function VoicePage() {
             border-top-right-radius: 22px;
             padding: 24px 24px 56px;
             box-shadow: 0 18px 48px rgba(12, 113, 195, 0.22);
-            background: black;
+            background: #6B207D;
           }
         }
       `}</style>
